@@ -1,10 +1,13 @@
 const dialog = document.getElementById('dialog')
+const dialogContent = document.getElementById('dialogContent')
 const unlockBtn = document.getElementById('unlockButton')
 const closeBtn = document.getElementById('closebtn')
 
 closeBtn.addEventListener('click', () => {
 	dialog.close()
 })
+dialog.addEventListener('click', () => dialog.close())
+dialogContent.addEventListener('click', (e) => e.stopPropagation())
 
 function openVault() {
 	// 1. Appends the message to the Modal Box
