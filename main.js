@@ -7,13 +7,6 @@ closeBtn.addEventListener('click', () => {
 })
 
 function openVault() {
-	// Extra code for fun!
-	// this checks if the
-	// if (document.getElementById('unlockButton').innerHTML === 'unlocked') {
-	// 	document.getElementById('unlockButton').innerHTML = 'unlock'
-	// 	return
-	// }
-
 	// 1. Appends the message to the Modal Box
 	document.getElementById('message').innerText =
 		'You have received this message because you have been chosen to open an important vault.\n\nHere is the secret combination: '
