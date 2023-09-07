@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Super Secured Vault</title>
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<dialog id="dialog" class="modal">
+				<p id="message"></p>
+				<p id="cbntn">Nothing to see here.</p>
+				<button id="closebtn" value="default">Close Vault</button>
+			</dialog>
+			<article class="content">
+				<h1>Welcome to your vault.</h1>
+				<p>Press the button below to unlock your vault</p>
+
+				<button onclick="openVault()" id="unlockButton">unlock</button>
+			</article>
+		</main>
+	</body>
+</html>
